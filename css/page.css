@@ -1,0 +1,427 @@
+/* start global rules */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:root {
+  --main-padding: 30px;
+  --main-margin: 30px;
+  --main-color: #f2f2f2;
+  --skill-color: #fff;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-aizing: border-box;
+}
+
+body {
+  font-family: arial;
+  user-select: none;
+  position: relative;
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+
+/*samall*/
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/*medium*/
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+/*larg*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1120px;
+  }
+}
+
+/* end global rules */
+
+/* start header */
+
+.header .container .all-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container .all-head ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.header .container .all-head ul li {
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 7px;
+  border-bottom: 1px solid var(--skill-color);
+  margin-left: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+@media (max-width: 767px) {
+  .header .container .all-head ul {
+    display: block;
+    background-color: rgb(187, 179, 179);
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .header .container .all-head .links ul li:hover {
+    padding-left: 15px;
+  }
+}
+/* end haeder */
+
+/* start services */
+.services {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-color: var(--main-color);
+  text-align: center;
+  margin-top: var(--main-margin);
+}
+
+.services .container h2 {
+  font-size: 35px;
+}
+
+.services .container h2 span {
+  color: rgb(4, 87, 143);
+}
+
+.services .container p {
+  line-height: 1.8;
+}
+/* end services */
+
+/* start second serv */
+.serv {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  margin-top: var(--main-margin);
+}
+
+.serv .container .all-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.serv .container .all-cols .ser img {
+  max-width: 100%;
+}
+.serv .container .all-cols .ser .text-serv p {
+  color: #777;
+  line-height: 1.8;
+}
+
+/* end second serv */
+
+/* start about */
+.about {
+  background-color: var(--main-color);
+  padding-bottom: var(--main-padding);
+  padding-top: var(--main-padding);
+  margin-top: var(--main-margin);
+}
+
+.about .container h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.about .container .all-rows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .container .all-rows .one-row .row img {
+  max-width: 100%;
+}
+.about .container .all-rows .one-row .row .text {
+  padding-left: 20px;
+  color: #777;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+@media (max-width: 950px) {
+  .about .container .all-rows {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .serv .container .all-cols {
+    text-align: center;
+  }
+}
+
+/* end about */
+
+/* start dashboard */
+
+.dashboard {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  margin-top: var(--main-margin);
+}
+
+.dashboard .container .all-dash {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dashboard .container .all-dash .dash {
+  width: calc(90% / 3);
+  height: 140px;
+  color: var(--skill-color);
+  text-align: center;
+  position: relative;
+}
+.dashboard .container .all-dash .dash .text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+.dashboard .container .all-dash .dash .text span {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.dashboard .container .all-dash .dash1 {
+  background-color: brown;
+}
+
+.dashboard .container .all-dash .dash2 {
+  background-color: teal;
+}
+
+.dashboard .container .all-dash .dash3 {
+  background-color: rgb(4, 87, 143);
+}
+
+@media (max-width: 767px) {
+  .dashboard .container .all-dash {
+    flex-direction: column;
+    align-items: center;
+  }
+  .dashboard .container .all-dash .dash {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+/* end dashboard */
+
+/* start skills */
+.skills {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  margin-top: var(--main-margin);
+  background-color: var(--main-color);
+  margin-bottom: var(--main-margin);
+}
+
+.skills .container h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills .container .html div {
+  width: 100%;
+  height: 50px;
+  background-color: var(--skill-color);
+  margin-left: 20px;
+}
+.skills .container .html span {
+  font-size: 18px;
+  width: 100px;
+}
+.skills .container .html {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.skills .container .html .one {
+  background-image: linear-gradient(
+    to right,
+    rgb(53, 149, 173) 60%,
+    transparent 60%,
+    transparent 100%
+  );
+  position: relative;
+}
+.skills .container .html .one::before {
+  content: "60%";
+  color: var(--skill-color);
+  position: absolute;
+  left: 55%;
+  top: 35%;
+}
+
+.skills .container .html .two {
+  background-image: linear-gradient(
+    to right,
+    rgb(53, 149, 173) 70%,
+    transparent 70%,
+    transparent 100%
+  );
+  position: relative;
+}
+.skills .container .html .two::before {
+  content: "70%";
+  color: var(--skill-color);
+  position: absolute;
+  left: 65%;
+  top: 35%;
+}
+
+.skills .container .html .three {
+  background-image: linear-gradient(
+    to right,
+    rgb(53, 149, 173) 80%,
+    transparent 80%,
+    transparent 100%
+  );
+  position: relative;
+}
+.skills .container .html .three::before {
+  content: "80%";
+  color: var(--skill-color);
+  position: absolute;
+  left: 75%;
+  top: 35%;
+}
+
+.skills .container .html .four {
+  background-image: linear-gradient(
+    to right,
+    rgb(53, 149, 173) 65%,
+    transparent 65%,
+    transparent 100%
+  );
+  position: relative;
+}
+
+.skills .container .html .four::before {
+  content: "65%";
+  color: var(--skill-color);
+  position: absolute;
+  left: 60%;
+  top: 35%;
+}
+.skills .container .html .five {
+  background-image: linear-gradient(
+    to right,
+    rgb(53, 149, 173) 90%,
+    transparent 90%,
+    transparent 100%
+  );
+  position: relative;
+}
+
+.skills .container .html .five::before {
+  content: "90%";
+  color: var(--skill-color);
+  position: absolute;
+  left: 85%;
+  top: 35%;
+}
+
+/* end skills */
+
+/* start footer */
+footer {
+  background-color: rgb(4, 41, 66);
+  position: absolute;
+  bottom: -34px;
+  right: 0;
+  width: 100%;
+  color: var(--skill-color);
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  font-size: 18px;
+  padding: 15px;
+}
+
+@media (max-width: 767px) {
+  footer .design {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills .container .html .one::before {
+    content: "60%";
+    color: var(--skill-color);
+    position: absolute;
+    left: 45%;
+    top: 35%;
+  }
+  .skills .container .html .two::before {
+    content: "65%";
+    color: var(--skill-color);
+    position: absolute;
+    left: 55%;
+    top: 35%;
+  }
+  .skills .container .html .three::before {
+    content: "70%";
+    color: var(--skill-color);
+    position: absolute;
+    left: 65%;
+    top: 35%;
+  }
+  .skills .container .html .four::before {
+    content: "65%";
+    color: var(--skill-color);
+    position: absolute;
+    left: 50%;
+    top: 35%;
+  }
+  .skills .container .html .five::before {
+    content: "90%";
+    color: var(--skill-color);
+    position: absolute;
+    left: 75%;
+    top: 35%;
+  }
+}
+/* end footer */
